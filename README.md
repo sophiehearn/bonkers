@@ -13,14 +13,3 @@ Team Bonkers has chosen to analyze the topic of race results of the Boston Marat
 ✓ Description of their source of data
 ✓ Questions they hope to answer with the data
 
-### Segment 1 Database Info
-
-The database requirements for segment 1 is as follows:
-	✓ Sample data that mimics the expected final database structure or schema 
-	✓ Draft machine learning module is connected to the provisional database
-
-In order for database info to work properly, a SQL database named "bonkers" needs to exist, and the pgAdmin password needs to be included in a config.py file under the variable name db_password.
-
-Data is exported from Jupyter Notebooks to the SQL database as expected, and the provisional database is set up to be connected to the learning machine module as necessary. 
-
-Therefore, both database requirements have been met.
