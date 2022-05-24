@@ -1,0 +1,14 @@
+-- create a new table named paces_bonks_2015 that combines the two tables
+-- marathon_2015_paces and calculated_bonk_2015 on the bib column.
+
+SELECT paces."Bib", paces."Name", paces."Age", paces."M/F", paces."City", 
+		paces."State", paces."Country", paces."Pace (0-5K)", 
+		paces."Pace (5-10K)", paces."Pace (10-15K)", paces."Pace (15-20K)",
+		paces."Pace (20-25K)", paces."Pace (25-30K)", paces."Pace (30-35K)", 
+		paces."Pace (35-40K)", paces."Overall Pace", bonk."Calculated Bonk"
+INTO paces_bonks_2015
+FROM marathon_2015_paces as paces
+	LEFT JOIN calculated_bonk_2015 as bonk
+	ON (paces."Bib" = bonk."Bib");
+	
+SELECT * FROM paces_bonks_2015;

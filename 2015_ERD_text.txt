@@ -1,0 +1,23 @@
+marathon_2015_paces
+-
+Bib FK >- calculated_bonk_2015.Bib
+Name 
+Age 
+M/F 
+City 
+State
+Country
+"Pace (0-5K)"
+"Pace (5-10K)"
+"Pace (10-15K)"
+"Pace (15-20K)"
+"Pace (20-25K)"
+"Pace (25-30K)"
+"Pace (30-35K)"
+"Pace (35-40K)"
+"Overall Pace"
+
+calculated_bonk_2015
+-
+Bib
+"Calculated Bonk"
