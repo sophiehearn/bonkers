@@ -9,7 +9,7 @@ The data for this project is three years worth race results of the Boston Marath
 Team Bonkers has chosen to analyze the topic of race results of the Boston Marathon in hopes of accurately predicting whether a participant will "hit the wall" between kilometers 30 and 35, the most common distance for racers to bonk.
 
 Presentation draft: https://docs.google.com/presentation/d/1d8zvxBq9tTE3GMmVfpqmGNf1SueGs0KXqisng6sfEf0/edit
-
+Tableau: https://public.tableau.com/app/profile/noah.shlesinger/viz/MarathonBonkingAnalyis/WorkingStory
 ✓ Selected topic
 ✓ Reason why they selected their topic
 ✓ Description of their source of data
