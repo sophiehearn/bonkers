@@ -12,3 +12,4 @@ FROM marathon_2015_paces as paces
 	ON (paces."Bib" = bonk."Bib");
 	
 SELECT * FROM paces_bonks_2015;
+
