@@ -10,3 +10,44 @@ Team Bonkers has chosen to analyze the topic of race results of the Boston Marat
 
 Presentation draft: https://docs.google.com/presentation/d/1d8zvxBq9tTE3GMmVfpqmGNf1SueGs0KXqisng6sfEf0/edit
 Tableau: https://public.tableau.com/app/profile/noah.shlesinger/viz/MarathonBonkingAnalyis/WorkingStory
+
+## Exploring the data
+
+Cleaning and preprocessing data occurs in the bonkers_clean_data_2015.ipynb file. Bonk calculations are in bonkers-calculations.ipynb file.
+
+### Cleaning data
+
+In cleaning the data, the raw CSV file is imported to Jupyter Notebooks using Pandas. Unused and unnecessary columns are removed from the dataframe and columns are converted to appropriate datatypes.
+
+- All marathon times were converted to times in the format hh:mm:ss using the Datetime dependency.
+- Pace columns were converted to minutes, rounded to 2 decimal places.
+- Bib number column was set to the index.
+
+Additionally, rows with null or invalid values were dropped. The cleaned dataset was exported to the Output_Files folder.
+
+### Preprocessing the Data
+
+The purpose of preprocessing the data is to create useful columns in preparation for machine learning and analysis.
+
+The following values were calculated:
+- Minutes it takes for runners to get from one milestone to the next.
+- Pace for each runner in the form of minutes/kilometers
+
+Then the pace columns for each milestone was added to the dataframe and the distance columns were removed. Finally, the dataframe is exported as CSV, and SQLAlchemy is used to export the dataframe to the SQL Database.
+
+### Bonk Calculations
+In order to calculate if a runner "bonked", the cleaned and preprocessed data is imported from SQL. 
+
+Then, the pace from 20-30K is compared to the pace from 30-35K for each runner. If the percent difference decreases by 10%, then the runner has "bonked" and it is indicated by a '1' in a new "bonk" table. 
+
+The table is then exported and saved to SQL.
+
+## Database
+
+SQL is used as the database for this project. The cleaned and preprocessed data is saved to SQL, as well as the "bonk" table, which is produced from the preprocessed data.
+
+In order to analyze and use the data in machine learning, the preprocessed data is joined to the "bonk" table. These two tables are "left joined" using a SQL query. The tables are joined according to the following ERD.
+
+![ERD for joining two tables](2015_ERD.PNG)
+
+
