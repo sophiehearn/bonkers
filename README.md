@@ -83,5 +83,12 @@ The model accurately predicted 74% of bonks, and 38% of no-bonks.
 The accuracy score for the easy ensemble method was 0.73. 
 The model accurately predicted 73% of bonks, and 73% of no-bonks.
 
+### Analysis
 
+Ultimately, our data models seemed to be somewhat good at predicting bonks or no bonks, but not both. This made accurate predictions difficult. As we came to understand more fully through the course of this project, pace times alone are a difficult datapoint with which to predict bonking. The scientific community agrees that bonking is a result of not adequately fueling properly for exercise. Thus, without data on fueling, it's difficult to get accurate predictions. 
+
+## Summary and Further Analysis 
+
+This project intended to explore whether it is possible to determine bonking during a long workout from previous pacing throughout the workout. There may be other ways to predict this information with this data, but our understanding is that more data would be useful and/or necessary to make accurate predictions.
+This is an interesting and potentially very useful question for endurance athletes, and it would be a valuable opportunity if these predictions could be made. We recommend further research to include data on individuals history pacing -- in races or in personal exercise data, fueling, and potentially wearable tech data -- such as heart rate, oxygen saturation, and probably most promising: blood sugar levels. Although this data is not always readily available, it could provide large benefits for athletes during races and also for appropriately fueling during training sessions. 
 
