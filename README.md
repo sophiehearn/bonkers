@@ -50,4 +50,38 @@ In order to analyze and use the data in machine learning, the preprocessed data 
 
 ![ERD for joining two tables](2015_ERD.PNG)
 
+## Machine Learning 
+
+Our core question was to determine if we could predict whether marathoners would bonk in the final 12k of their race, based on the pace times for the initial 20k. In order to provide a prediction, we used several different methods of supervised machine learning: logistic regression, random forest, oversampling, undersampling, and easy ensemble. 
+
+With each of these methods, we trained a set of existing data and then tested the remaining data to determine the success of the algorithm. 
+
+Below, we will outline the results of the various methods: 
+
+### Logistic Regression
+
+The accuracy score for logistic regression was 0.87. 
+The model accurately predicted 10% of bonks, and 98% of no-bonks. 
+
+### Random Forest
+
+The accuracy score for the random forest method was 0.89. 
+The model accurately predicted 23% of bonks, and 97% of no-bonks.
+
+### Oversampling 
+
+The accuracy score for the oversampling method was 0.76. 
+The model accurately predicted 68% of bonks, and 83% of no-bonks.
+
+### Undersampling 
+
+The accuracy score for the undersampling method was 0.55. 
+The model accurately predicted 74% of bonks, and 38% of no-bonks.
+
+### Easy Ensemble
+
+The accuracy score for the easy ensemble method was 0.73. 
+The model accurately predicted 73% of bonks, and 73% of no-bonks.
+
+
 
